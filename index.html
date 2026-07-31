@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>樂活黃金歲月 - 專屬樂齡族群的退休生活規劃與社交平台</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header class="navbar">
+    <a href="#home" class="logo">🌅 樂活黃金歲月</a>
+    <!-- 漢堡選單按鈕（手機版） -->
+    <button class="menu-toggle" id="mobile-menu" aria-label="切換選單">
+        ☰
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#home">首頁</a></li>
+        <li><a href="#social">興趣社交</a></li>
+        <li><a href="#finance">財務規劃</a></li>
+        <li><a href="#health">健康管理</a></li>
+        <li><a href="#community">線上互動</a></li>
+        <li><a href="#stories">精選故事</a></li>
+        <li><a href="#register">活動報名</a></li>
+        <!-- 無障礙字型切換條 -->
+        <li class="accessibility-bar">
+            <span>字體：</span>
+            <button class="font-btn" onclick="changeFontSize('small', this)">小</button>
+            <button class="font-btn active" onclick="changeFontSize('medium', this)">中</button>
+            <button class="font-btn" onclick="changeFontSize('large', this)">大</button>
+        </li>
+    </ul>
+</header>
+
+<section id="home" class="carousel-container">
+    <div class="carousel-track">
+        
+        <!-- 第一張圖 -->
+        <div class="slide" id="slide-1">
+            <a href="#slide-3" class="carousel-btn prev">‹</a>
+            <a href="#slide-2" class="carousel-btn next">›</a>
+            <img src="images/banner1.jpg" alt="輪播圖 1">
+            <div class="slide-caption">
+                <h2>歡迎來到樂活健康網</h2>
+                <p>關心您的每一天，提供最實用的健康資訊</p>
+            </div>
+        </div>
+
+        <!-- 第二張圖 -->
+        <div class="slide" id="slide-2">
+            <a href="#slide-1" class="carousel-btn prev">‹</a>
+            <a href="#slide-3" class="carousel-btn next">›</a>
+            <img src="images/banner2.jpg" alt="輪播圖 2">
+            <div class="slide-caption">
+                <h2>樂活飲食與運動</h2>
+                <p>維持良好習慣，建立健康自信的人生</p>
+            </div>
+        </div>
+
+        <!-- 第三張圖 -->
+        <div class="slide" id="slide-3">
+            <a href="#slide-2" class="carousel-btn prev">‹</a>
+            <a href="#slide-1" class="carousel-btn next">›</a>
+            <img src="images/banner3.jpg" alt="輪播圖 3">
+            <div class="slide-caption">
+                <h2>預防勝於治療</h2>
+                <p>定期自我檢視，守護全家人的身心健康</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="social" class="section">
+    <div class="container">
+        <h2 class="section-title">興趣活動與多元社交</h2>
+        <p class="section-subtitle">活出精彩退休時光，積極參與學習與互動，為生活注入全新色彩！</p>
+        
+        <div class="grid-3">
+            <div class="card">
+                <h3>🎨 藝術與學習課程</h3>
+                <p>推薦本地藝術水彩、數位基礎課、以及園藝趣味工作坊，幫助您學會使用智慧型手機，發掘全新生活重心。</p>
+            </div>
+            <div class="card">
+                <h3>🤝 志工與社區活動</h3>
+                <p>參與社區志工服務或徒步健行活動。透過無私的奉獻與社交互動，讓您不僅豐富人際關係，更與社會建立深厚連結。</p>
+            </div>
+            <div class="card">
+                <h3>🏆 個人成長教練計畫</h3>
+                <p>依照個人進度進行年度挑戰，從健康管理到藝術創作，由專業教練陪伴您一步步達成人生下半場的精彩亮點。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="finance" class="section gray-bg">
+    <div class="container">
+        <h2 class="section-title">穩健退休財務規劃</h2>
+        
+        <div class="grid-3">
+            <div class="card" style="grid-column: span 2;">
+                <h3>📈 退休投資三大法則</h3>
+                <ul>
+                    <li><strong>確保流動性：</strong>投資前先留出至少 6 個月的緊急備用金。</li>
+                    <li><strong>選擇低風險工具：</strong>退休理財以定存、配息型債券等穩健收益為主。</li>
+                    <li><strong>分散投資：</strong>分散配置定存與基金，降低市場波動風險。</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>💡 專屬您的理財小貼士</h3>
+                <p>退休理財首重「穩中求進」，優先保護資產安全，建立穩定的現金流（例如利息或配息），讓您的資金在安全網內持續為您工作。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="health" class="section">
+    <div class="container">
+        <h2 class="section-title">健康管理與醫療資源</h2>
+        
+        <div class="grid-3">
+            <!-- 直接使用 alert 提示 -->
+            <div class="card health-box">
+                <h3>📅 日常健康好幫手</h3>
+                <p>勾選今日完成事項，培養健康好習慣：</p>
+                <label><input type="checkbox"> 晨間伸展運動與拉筋 (15分鐘)</label>
+                <label><input type="checkbox"> 按時服藥/補充營養素 (鈣、維生素D)</label>
+                <label><input type="checkbox"> 補充充足水分 (2000c.c.)</label>
+                <button class="btn" style="margin-top: 15px;" onclick="alert('今日健康習慣已成功保存！')">今日打卡確認</button>
+            </div>
+
+            <div class="card">
+                <h3>🍏 樂齡均衡飲食三大關鍵</h3>
+                <p><strong>優質蛋白質：</strong>多攝取雞蛋、豆腐、鮮魚，維護肌肉質量。<br>
+                <strong>高纖促腸胃：</strong>選擇全穀類與深色蔬菜。<br>
+                <strong>控鹽控糖：</strong>遠離加工食品，喝無糖茶和白開水最健康。</p>
+            </div>
+
+            <div class="card">
+                <h3>🔍 醫療資源與健檢快速查詢</h3>
+                <p>列出當地合作之醫院、診所、及專科健康檢查中心。定期安排全身檢查（血壓、血糖、骨密度），提早掌握身體健康動態。</p>
+                <button class="btn" style="margin-top: 15px;" onclick="alert('正為您偵測並串接離您最近的合作基層醫療健檢中心...')">尋找附近健檢中心</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="community" class="section gray-bg">
+    <div class="container">
+        <h2 class="section-title">樂齡溫馨線上社群</h2>
+        
+        <!-- 直接使用 alert 提示 -->
+        <div class="card">
+            <h3>📔 我的私房樂活日記</h3>
+            <p style="margin-bottom: 15px;">靜下心，記錄今天感到開心或感恩的小事，積攢滿滿正能量。</p>
+            <textarea placeholder="今天發生了什麼令人開心的事呢？"></textarea>
+            <button class="btn" onclick="alert('🎉 日記已成功儲存！')">儲存日記</button>
+        </div>
+    </div>
+</section>
+
+<section id="stories" class="section">
+    <div class="container">
+        <h2 class="section-title">精彩故事與生活靈感</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>🌟 活出第二春：林工程師的故事</h3>
+                <p>65 歲退休的林先生，原本擔心生活失去焦點。後來加入樂活平台，規劃了個人學習與健行目標。如今他不但是攝影高手，還成了社區的自然導覽員，真正實踐了「退休不是結束，而是全新開始」。</p>
+            </div>
+            <div class="card">
+                <h3>📚 本月生活靈感推薦</h3>
+                <p>本月為大家挑選的精彩內容：<br>
+                · <strong>經典書單：</strong>《活出精彩下半場》<br>
+                · <strong>旅行推薦：</strong>花蓮樂活慢遊——親近大自然森林療癒之旅<br>
+                · <strong>藝術創作：</strong>簡單手作皮革名片夾</p>
+            </div>
+            <div class="card">
+                <h3>🙋 常見問答 (Q&A)</h3>
+                <p><strong>問：</strong>完全不會用電腦能參加線上社群嗎？<br>
+                <strong>答：</strong>完全可以！我們提供簡易的大字版手機操作指南，更有志工一對一帶您上手，不用擔心喔！</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="register" class="section" style="background-color: #fff;">
+    <div class="container">
+        <h2 class="section-title">活動報名與諮詢服務</h2>
+        
+        <div class="grid-3">
+            <div class="card form-box" style="grid-column: span 2; max-width: 100%;">
+                <h3>✍️ 講座與課程快速報名</h3>
+                <p style="margin-bottom: 15px;">請填寫下方資料，我們將有專人與您聯繫並確認名額。</p>
+                <form onsubmit="handleRegistration(event)">
+                    <label for="reg-name">您的姓名 *</label>
+                    <input type="text" id="reg-name" required placeholder="例如：李大明">
+
+                    <label for="reg-phone">聯絡電話 *</label>
+                    <input type="tel" id="reg-phone" required placeholder="例如：0912-345-678">
+
+                    <label for="reg-event">想參加的課程 or 活動 *</label>
+                    <select id="reg-event" required>
+                        <option value="">--- 請選擇報名項目 ---</option>
+                        <option value="1月 樂齡健康體操班">1月：樂齡健康體操班 (提升體能)</option>
+                        <option value="2月 銀髮族數位基礎課">2月：銀髮族數位基礎課 (智慧型手機)</option>
+                        <option value="3月 園藝趣味工作坊">3月：園藝趣味工作坊 (花草栽培)</option>
+                        <option value="5月 樂齡退休財務管理講座">5月：樂齡退休財務管理講座</option>
+                        <option value="9月 樂齡心理健康講座">9月：樂齡心理健康講座 (紓壓放鬆)</option>
+                    </select>
+
+                    <label for="reg-memo">其他備註 (如有特殊飲食或行動需求)</label>
+                    <textarea id="reg-memo" style="height: 70px;" placeholder="有任何需要協助的地方，歡迎在此留言"></textarea>
+
+                    <button type="submit" class="btn">確認送出報名</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>📌 活動參與說明</h3>
+                <p style="font-size: 0.95rem; margin-bottom: 15px;">
+                    1. 所有社區課程均為樂齡族免費或僅收取微薄材料費。<br>
+                    2. 報名成功後，工作人員將於 3 個工作天內，以電話向您聯絡。
+                </p>
+                <hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
+                <h3>📞 聯絡專線</h3>
+                <p style="font-size: 0.95rem;">
+                    <strong>免付費專線：</strong>0800-123-456<br>
+                    <strong>服務時間：</strong>週一至週五 09:00 - 17:00<br>
+                    <strong>電子信箱：</strong>service@lohasactive.org
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 聊天機器人 -->
+<div id="w" class="chat-window">
+    <div class="chat-header">
+        <span> 線上客服助手</span>
+        <span style="cursor: pointer;" onclick="aWindow()">✕</span>
+    </div>
+    <div id="m" class="chat-messages">
+        <div class="b">您好！請輸入訊息，我會隨機回答您：</div>
+    </div>
+    <div class="chat-input">
+        <input id="i" placeholder="請打字..." onkeydown="if(event.key==='Enter') send()">
+        <button onclick="send()">送出</button>
+    </div>
+</div>
+<div class="chat-btn" onclick="aWindow()">❤️ 客服</div>
+
+<footer class="section footer-section">
+    <div class="container" style="text-align: center;">
+        <p>🌅 樂活黃金歲月 樂齡退休規劃網站</p>
+        <p style="font-size: 0.85rem; color: #d0e1d4; margin-top: 5px;">&copy; 2026 樂活黃金歲月．版權所有，禁止未經授權轉載</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
